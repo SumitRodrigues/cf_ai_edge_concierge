@@ -72,22 +72,3 @@ If you host the frontend somewhere other than the Worker subdomain, set:
 
 frontend/.env  →  VITE_API_BASE=https://<your-worker>.<subdomain>.workers.dev
 Rebuild: npm run build.
-
-🔌 Optional “tool” (coordination demo)
-Add this block in backend/worker.ts before calling the LLM:
-
-
-🗺️ Folder map
-bash
-Copy code
-cf_ai_edge_concierge/
-├─ backend/
-│  └─ worker.ts              # Worker: memory + tool + LLM
-├─ frontend/
-│  ├─ src/App.tsx            # Minimal 3D chat UI
-│  ├─ src/main.tsx
-│  ├─ src/index.css          # Tailwind v4 + custom styles
-│  └─ vite.config.ts         # dev proxy
-├─ wrangler.toml
-├─ README.md
-└─ PROMPTS.md                # prompts you used (see template)
