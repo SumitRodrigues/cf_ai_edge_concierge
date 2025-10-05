@@ -24,20 +24,21 @@
 
 ## ⚙️ Local Development
 
-### 1) Backend (Worker)
-# from repo root
+## 1) Backend (Worker)
+
+from repo root
 wrangler dev --local
-# Ready at http://127.0.0.1:8787
+Ready at http://127.0.0.1:8787
 Dev-safe fallback: If Workers AI auth isn’t set up yet, the Worker returns a friendly fallback string so the UI never 500s.`
 
 ---
 
-2) Frontend
+## 2) Frontend
 
 cd frontend
 npm install
 npm run dev
-# http://localhost:5173
+http://localhost:5173
 How it connects:
 
 vite.config.ts proxies /api → http://127.0.0.1:8787 in dev, so the UI calls /api/chat.
@@ -53,7 +54,7 @@ wrangler vectorize create edge-mem --dimensions=768 --metric=cosine
 
 ---
 
-🚀 Deploy
+## 🚀 Deploy
 
 # Backend
 wrangler deploy
@@ -62,8 +63,10 @@ wrangler deploy
 # Frontend
 cd frontend
 npm run build
-# Upload dist/ to Cloudflare Pages (dash) or connect repo to Pages
-Production base URL:
+
+Upload dist/ to Cloudflare Pages (dash) or connect repo to Pages
+
+# Production base URL:
 If you host the frontend somewhere other than the Worker subdomain, set:
 
 frontend/.env  →  VITE_API_BASE=https://<your-worker>.<subdomain>.workers.dev
