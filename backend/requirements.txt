@@ -1,0 +1,2 @@
+# Minimal requirements. The Workers runtime provides bindings; external heavy deps aren't needed.
+cloudflare
