@@ -5,8 +5,6 @@
 - **Backend:** Cloudflare Worker (TypeScript) calling **Workers AI** (Llama 3.3)  
 - **State/Memory:** KV (short-term chat history) + Vectorize (long-term snippets)
 
-**Why it stands out:** Minimal, fast, 3D-tinged UI; memory-augmented replies; safe local dev fallback; tool orchestration snippet to demonstrate coordination.
-
 ---
 
 ## ✨ Features
