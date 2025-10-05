@@ -12,7 +12,6 @@
 - **Chat UI:** polished, minimal, smooth scroll & subtle 3D tilt
 - **Memory:** KV session history + Vectorize summaries
 - **Coordination:** Worker orchestrates memory → optional tool (weather) → LLM  
-  *(You can flip in Durable Objects / Workflows later if your account has access.)*
 
 ---
 
@@ -26,7 +25,6 @@
 ## ⚙️ Local Development
 
 ### 1) Backend (Worker)
-`
 # from repo root
 wrangler dev --local
 # Ready at http://127.0.0.1:8787
