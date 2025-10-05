@@ -58,7 +58,7 @@ wrangler vectorize create edge-mem --dimensions=768 --metric=cosine
 
 # Backend
 wrangler deploy
-# Prints https://<name>.<subdomain>.workers.dev
+Prints https://<name>.<subdomain>.workers.dev
 
 # Frontend
 cd frontend
