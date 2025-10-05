@@ -1,4 +1,4 @@
-# Edge Concierge (Cloudflare SWE Intern Assignment)
+# Edge Concierge
 
 > TypeScript frontend (React on Pages) + **Python backend** (Workers AI + KV + Vectorize + optional Workflows).
 
