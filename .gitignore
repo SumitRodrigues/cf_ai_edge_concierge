@@ -3,3 +3,4 @@ dist
 .swr
 .wrangler
 .DS_Store
+.env
